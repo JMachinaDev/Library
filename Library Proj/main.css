@@ -1,0 +1,140 @@
+* {
+    box-sizing: border-box;
+    margin: 0px;
+    padding: 0px;
+    font-family: 'Bebas Neue', cursive;
+
+}
+body {
+    background-color: #003049;
+}
+/* Container div, header, addbook button, and book container */
+.container {
+    padding: 10px 0;
+    margin: 10% 0; 
+    background-color:#f77f00;
+}
+i {
+    font-size: 40px;
+    padding: 5px;
+}
+p {
+    text-align: center;
+    font-family: 'Montserrat Subrayada', sans-serif;
+    font-size: 40px;
+    color: #003049;
+}
+#myBtn {
+    display: block;
+    margin: 10px auto;
+    padding: 5px;
+}
+#myBooks {
+    width: 70%;
+    margin: auto;
+    font-size: 20px;
+}
+
+
+
+        /* TABLE CONTENT */
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/* READ CHECKBOX */
+.check input { 
+    display: none; 
+}
+.check .ynRead { 
+    padding: 2px; 
+    border: 1px solid #ccc; 
+    background: #00ffbf;
+    border-radius: 20%; 
+}
+.check input:checked + .ynRead { 
+    background: #d62828; 
+}
+/* Table Style */
+table {
+    border-collapse: separate; /*  collapse - shared borders*/
+    width: 100%;
+  }
+  
+  td, th {
+    border: 1px solid #dddddd;
+    text-align: left;
+    padding: 8px;
+  }
+  
+  tr:nth-child(even) {
+    background-color: #dddddd;
+  }
+
+
+
+
+
+
+
+/*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  *//*  */
+/* Modal Form */
+fieldset {
+    /* background-color: #eeeeee; */
+    display: block;
+    margin-left: 2px;
+    margin-right: 2px;
+    padding-top: 0.35em;
+    padding-bottom: 0.625em;
+    padding-left: 0.75em;
+    padding-right: 0.75em;
+    border: 2px groove (internal value);
+}
+legend {
+    background-color: gray;
+    color: white;
+    padding: 5px 10px;
+} 
+input {
+    margin: 5px;
+}
+
+/* The Modal (background) */
+.modal {
+    display: none; /* Hidden by default */
+    position: fixed; /* Stay in place */
+    z-index: 1; /* Sit on top */
+    padding-top: 100px; /* Location of the box */
+    left: 0;
+    top: 0;
+    width: 100%; /* Full width */
+    height: 100%; /* Full height */
+    overflow: auto; /* Enable scroll if needed */
+    background-color: rgb(0,0,0); /* Fallback color */
+    background-color: rgba(0,0,0,0.4); /* Black w/ opacity */
+    font-size: 25px;
+  }
+  h3 {
+    text-align: center;
+  }
+  
+  /* Modal Content */
+  .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid #888;
+    width: 50%;
+  }
+  
+  /* The Close Button */
+  .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+  }
+  
+  .close:hover,
+  .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+  }

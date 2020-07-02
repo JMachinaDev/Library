@@ -1,0 +1,100 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="main.css">
+    <link href="https://fonts.googleapis.com/css2?family=Bebas+Neue&family=Montserrat+Subrayada&display=swap" rel="stylesheet"> 
+    <script src="https://kit.fontawesome.com/b21af8175c.js" crossorigin="anonymous"></script>
+    <title>Book Hero</title>
+</head>
+<body>
+    <div class="container">
+        <header>
+            
+            <p><i class="fas fa-mask"></i>Book Hero</p>
+        </header>
+        <!-- add book button -->
+        <button type="button" id="myBtn" >Add Book</button>
+        <!-- book container -->
+        <div>
+            <table id="myBooks">
+                <tr>
+                    <th>Title</th>
+                    <th>Author</th>
+                    <th># of pages</th>
+                    <th>Read</th>
+                    <th>Remove</th>
+                </tr>
+            </table>
+        </div>
+    </div>
+
+    
+    <!-- modal pop up -->
+    
+    <!-- The Modal -->
+    <div id="myModal" class="modal">
+        <!-- Modal Content -->
+        <div class="modal-content">
+            <span class="close">&times;</span>
+            <header>
+                <h3>Add Book</h3>
+            </header>
+
+            <form action="/main.js">
+                <fieldset>
+                    <legend>Book:</legend>
+
+                    <label for="tTitle">Title:</label>  
+                    <input type="text" id="title" name="title" value="" required>
+                        <br><br>
+
+                    <label for="aName">Author:</label>
+                    <input type="text" id="author" name="author" value="" required>
+                        <br><br>
+
+                    <label for="nPages"># of pages:</label>
+                    <input type="number" id="pages" name="pages" value="" required>
+                        <br><br>
+
+                    <input type="Submit"  value="Submit"> <!-- class="addingBook" -->
+                    <input type="reset">
+
+                </fieldset>
+            </form>
+        </div>
+    </div>
+    <!-- MODAL OPEN -->
+    <script>
+        // Get the modal
+        var modal = document.getElementById("myModal");
+        
+        // Get the button that opens the modal
+        var btn = document.getElementById("myBtn");
+        
+        // Get the <span> element that closes the modal
+        var span = document.getElementsByClassName("close")[0];
+        
+        // When the user clicks the button, open the modal 
+        btn.onclick = function() {
+          modal.style.display = "block";
+        }
+        
+        // When the user clicks on <span> (x), close the modal
+        span.onclick = function() {
+          modal.style.display = "none";
+        }
+        
+        // When the user clicks anywhere outside of the modal, close it
+        window.onclick = function(event) {
+          if (event.target == modal) {
+            modal.style.display = "none";
+          }
+        }
+    </script>
+    <!-- javascript page -->
+    <script src="practice.js"></script>
+    
+</body>
+</html>
